@@ -129,7 +129,7 @@ public class Qndxx {
 //        System.out.println(JSON.parse(confirm.body()));
         JSONObject result= (JSONObject) JSON.parse(confirm.body());
 //        System.out.println(result);
-        if (result.get("message").equals("操作成功")){
+        if (result.get("message").equals("操作成功") && result.get("status").equals(1)){
 //            System.out.println("ok");
 
 
